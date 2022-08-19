@@ -30,15 +30,7 @@ app.get('/api/:wineName', (req, res) => {
       })
       .catch(error => console.error(error))
   })
-// app.get('/api/:wineName', (req, res) => {
-//     const winesName = req.params.wineName.toLowerCase()
-//     infoCollection.find({id: winesName}).toArray()
-//     .then(results => {
-//         console.log(results)
-//         res.json(results[0])
-//     })
-//     .catch(error => console.error(error))
-// })
+
 
   app.get('/api/', (req, res) => {
     infoCollection.find().toArray()
